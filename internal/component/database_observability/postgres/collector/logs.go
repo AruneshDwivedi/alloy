@@ -46,9 +46,8 @@ type LogsArguments struct {
 }
 
 type Logs struct {
-	logger       *slog.Logger
-	entryHandler loki.EntryHandler
-	registry     *prometheus.Registry
+	logger   *slog.Logger
+	registry *prometheus.Registry
 
 	receiver         loki.LogsReceiver
 	excludeDatabases []string
